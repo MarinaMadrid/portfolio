@@ -40,6 +40,18 @@ main{
 }
 
 main section, article{
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.images img{
+    border: 3px outset goldenrod;
+    width: 15em;
+    height: 20em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.girl{
+    width: 25em;
+    height: 30em;  
 }
