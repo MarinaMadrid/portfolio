@@ -44,11 +44,43 @@ main section, article{
     margin-left: 0.5em;
 }
 
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
 .images img{
     border: 3px outset goldenrod;
-    width: 15em;
-    height: 20em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease-in-out; 
+    opacity: 0; 
+}
+
+figure:hover figcaption {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .girl{
