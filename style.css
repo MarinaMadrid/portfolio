@@ -34,3 +34,12 @@ header{
         5px 5px 0px hsl(0,0%,100%);
     font-size: 2em;
 }
+
+main{
+    padding: 5em;
+}
+
+main section, article{
+    margin-right: 1em;
+    margin-left: 1em;
+}
