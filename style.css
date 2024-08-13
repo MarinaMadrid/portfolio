@@ -59,8 +59,8 @@ figure {
     border: 3px outset goldenrod;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     display: block;
-    width: 100%;
-    height: auto;
+    width: 13em;
+    height: 20em;
 }
 
 figcaption {
