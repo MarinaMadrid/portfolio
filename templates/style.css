@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *,
 *::before,
 *::after {
@@ -17,7 +19,7 @@ body{
     padding: 2em;
 }
 
-header{
+header, main{
     border: 1px solid white;
     border-radius: 7px;
     padding: 1em;
@@ -31,7 +33,24 @@ header{
 }
 
 main{
-    padding: 5em;
+    font-family: "VT323", monospace;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 40em;
+    height: 16em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+figure{
+    margin-right: 2em;
+}
+
+img{
+    border-radius: 5px;
+    width: 10em;
+    height: 10em;
 }
 
 footer{
