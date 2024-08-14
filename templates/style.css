@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,228,255);
+    background: linear-gradient(90deg, rgba(0,228,255,1) 26%, rgba(9,104,217,1) 93%);
+    padding: 2em;
+}
+
+header{
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 1em;
+    color: white; 
+    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
+        2px 2px 0px hsl(0,0%,100%),
+        3px 3px 0px hsl(0,0%,100%),
+        4px 4px 0px hsl(0,0%,100%),
+        5px 5px 0px hsl(0,0%,100%);
+    font-size: 2em;
+}
+
+main{
+    padding: 5em;
+}
+
+footer{
+    color: white
+}
