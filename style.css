@@ -46,6 +46,7 @@ main section, article{
 
 .images {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
