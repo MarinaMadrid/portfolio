@@ -47,6 +47,10 @@ figure{
     margin-right: 2em;
 }
 
+section{
+    font-size: 0.8em;
+}
+
 img{
     border-radius: 5px;
     width: 10em;
