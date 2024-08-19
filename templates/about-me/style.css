@@ -40,6 +40,28 @@ header {
     max-width: 100%;
 }
 
+figure a{
+    text-decoration: none;
+}
+
+figure {
+    text-align: center; 
+    margin: 20px;
+}
+
+figcaption {
+    display: block;
+    margin-top: 10px; 
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: larger;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -48,13 +70,18 @@ nav {
     margin-top: 3em;
 }
 
+nav figure {
+    margin-bottom: 1em;
+}
+
 nav img {
     width: 10vw;
     height: 10vw;
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 70px;
+    max-height: 70px;
     border-radius: 50%;
 }
+
 
 main {
     display: flex;
@@ -66,10 +93,6 @@ main {
     margin-bottom: 1.5em;
     width: 100%;
     max-width: 40em;
-}
-
-nav figure {
-    margin-bottom: 1em;
 }
 
 main figure{

@@ -40,23 +40,64 @@ header {
     max-width: 100%;
 }
 
-nav {
+figure a{
+    text-decoration: none;
+}
+
+figure {
+    text-align: center; 
+    margin: 20px;
+}
+
+figcaption {
+    display: block;
+    margin-top: 10px; 
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: larger;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+nav, article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
-    margin-top: 3em;
-    margin-bottom: 3em;
 }
 
-nav img {
+nav {
+    margin-top: 3em;
+}
+
+nav figure {
+    margin-bottom: 1em;
+}
+
+nav img, section img {
     width: 10vw;
     height: 10vw;
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 70px;
+    max-height: 70px;
     border-radius: 50%;
 }
 
 section h2{
     font-size: 0.8em;
 }
+
+article {
+    margin-top: 1em;
+}
+
+section figcaption{
+    font-size: large;
+}
+
+section{
+    margin-bottom: 1em;
+}
+
