@@ -53,9 +53,12 @@ figcaption {
     display: block;
     margin-top: 10px; 
     color: white;
+    font-size: larger;
+}
+
+header figcaption{
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    font-size: larger;
 }
 
 figure:hover figcaption {
@@ -89,7 +92,7 @@ section h2{
     font-size: 0.8em;
 }
 
-article {
+section, article {
     margin-top: 1em;
 }
 
@@ -101,3 +104,17 @@ section{
     margin-bottom: 1em;
 }
 
+.it {
+    padding: 0;
+    padding-top: 1em;
+}
+
+.it article{
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    font-family: "VT323", monospace;
+}
+
+.it img{
+    border-radius: 0;
+}

@@ -12,7 +12,6 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: rgb(0,228,255);
     background: linear-gradient(90deg, rgba(0,228,255,1) 26%, rgba(9,104,217,1) 93%);
     padding: 2em;
 }
