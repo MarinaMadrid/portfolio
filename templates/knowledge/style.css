@@ -117,4 +117,5 @@ section{
 
 .it img{
     border-radius: 0;
+    filter: drop-shadow(0 0 0.75rem lightpink);
 }
