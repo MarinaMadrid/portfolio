@@ -88,6 +88,10 @@ nav img, section img {
     border-radius: 50%;
 }
 
+section{
+    margin-bottom: 1em;
+}
+
 section h2{
     font-size: 0.8em;
 }
@@ -96,12 +100,8 @@ section, article {
     margin-top: 1em;
 }
 
-section figcaption{
+section figcaption, section span{
     font-size: large;
-}
-
-section{
-    margin-bottom: 1em;
 }
 
 .it {
@@ -119,3 +119,4 @@ section{
     border-radius: 0;
     filter: drop-shadow(0 0 0.75rem lightpink);
 }
+
