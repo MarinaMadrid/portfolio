@@ -107,12 +107,11 @@ main {
 
 section, article {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
-.experience{
-    flex-direction: column;
+section{
+    justify-content: flex-start;
 }
 
 section img{
@@ -126,14 +125,8 @@ hr {
 
 article {
     margin-top: 1em;
-    justify-content: center;
-}
-
-.text{
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .it{
