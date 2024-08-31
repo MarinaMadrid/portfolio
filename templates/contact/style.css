@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(0,228,255);
+    background: linear-gradient(90deg, rgba(0,228,255,1) 26%, rgba(9,104,217,1) 93%);
+    padding: 2em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header, section {
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 1em;
+    color: white; 
+    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
+                2px 2px 0px hsl(0,0%,100%),
+                3px 3px 0px hsl(0,0%,100%),
+                4px 4px 0px hsl(0,0%,100%),
+                5px 5px 0px hsl(0,0%,100%);
+    font-size: 2.5em;
+    max-width: 100%;
+}
+
+figure a{
+    text-decoration: none;
+}
+
+figure {
+    text-align: center; 
+    margin: 20px;
+}
+
+figcaption {
+    display: block;
+    margin-top: 10px; 
+    color: white;
+    font-size: larger;
+}
+
+header figcaption{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+nav, article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav {
+    margin-top: 3em;
+}
+
+nav figure {
+    margin-bottom: 1em;
+}
+
+nav img {
+    width: 10vw;
+    height: 10vw;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+
