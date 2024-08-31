@@ -39,6 +39,8 @@ header{
 main{
     padding: 5em;
     flex-direction: column;
+    max-width: 100%;
+    color: white;
 }
 
 main section, article{
@@ -70,14 +72,13 @@ figure {
     height: 20em;
 }
 
-figcaption {
+.images figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
     text-align: center;
     font-size: 1em;
     transform: translateY(100%); 
@@ -85,7 +86,7 @@ figcaption {
     opacity: 0; 
 }
 
-figure:hover figcaption {
+.images figure:hover figcaption {
     transform: translateY(0);
     opacity: 1;
 }
@@ -96,23 +97,29 @@ figure:hover figcaption {
     border: none;
 }
 
-.about-me{
+h2{
+    margin-top: 2em;
+}
+
+.about-me, .knowledge article{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-family: "VT323", monospace;
     border: 1px solid white;
-    border-radius: 7px;
-    padding: 1em;
-    color: white; 
     box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
-                2px 2px 0px hsl(0,0%,100%),
-                3px 3px 0px hsl(0,0%,100%),
-                4px 4px 0px hsl(0,0%,100%),
-                5px 5px 0px hsl(0,0%,100%);
+    2px 2px 0px hsl(0,0%,100%),
+    3px 3px 0px hsl(0,0%,100%),
+    4px 4px 0px hsl(0,0%,100%),
+    5px 5px 0px hsl(0,0%,100%);
+}
+
+.about-me {
+    font-family: "VT323", monospace;
+    border-radius: 7px;
     font-size: 2em;
     max-width: 100%;
+    padding: 1em;
 }
 
 .about-me figure{
@@ -134,6 +141,66 @@ figure:hover figcaption {
     width: 350px;
     height: 350px;
 }
+
+.knowledge article {
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.knowledge figure{
+    margin: 1em;
+}
+
+
+.knowledge article div{
+    display: flex;
+    flex-direction: row;
+}
+
+.knowledge img{
+    width: 10vw;
+    height: 10vw;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.knowledge .languages{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.knowledge .level-languages{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.knowledge .it {
+    background-color: rgba(0, 0, 0);
+    padding: 0;
+}
+
+
+.knowledge .it div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    font-family: "VT323", monospace;
+    width: 100%;
+}
+
+
+.knowledge .it figure{
+    filter: drop-shadow(0 0 0.30rem lightpink);
+}
+
 
 footer{
     color: white
