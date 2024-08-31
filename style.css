@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *,
 *::before,
 *::after {
@@ -36,11 +38,16 @@ header{
 
 main{
     padding: 5em;
+    flex-direction: column;
 }
 
 main section, article{
     margin-right: 0.5em;
     margin-left: 0.5em;
+}
+
+section{
+    margin-top: 3em;
 }
 
 .images {
@@ -83,9 +90,49 @@ figure:hover figcaption {
     opacity: 1;
 }
 
-.girl{
+.images .girl{
     width: 25em;
-    height: 30em;  
+    height: 30em; 
+    border: none;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "VT323", monospace;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 1em;
+    color: white; 
+    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
+                2px 2px 0px hsl(0,0%,100%),
+                3px 3px 0px hsl(0,0%,100%),
+                4px 4px 0px hsl(0,0%,100%),
+                5px 5px 0px hsl(0,0%,100%);
+    font-size: 2em;
+    max-width: 100%;
+}
+
+.about-me figure{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.about-me .text-about {
+    flex: 1 1 300px;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.about-me img {
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
 }
 
 footer{
