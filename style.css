@@ -18,6 +18,11 @@ body{
     padding: 2em;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 main, .images{
     display: flex;
     flex-direction: row;
