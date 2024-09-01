@@ -220,6 +220,12 @@ h2{
     margin-right: auto;
 }
 
+.experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .experience span {
     font-size: x-large;
 }
