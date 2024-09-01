@@ -215,7 +215,7 @@ h2{
 .experience{
     background-color: black;
     width: 50%;
-    min-width: 80em;
+    min-width: 73em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -238,28 +238,31 @@ h2{
 .experience li{
     display: grid;
     align-items: start;
-    grid-template-columns: 1fr 2fr 2fr; 
+    grid-template-columns: 0.5fr 2fr 2fr; 
     width: 70em;
 }
 
 .experience .it-experience {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;  
+    grid-template-columns: 0.5fr 2fr 2fr;  
 }
 
-.experience .business-logo{
-    width: 50px;
+.experience .it-experience .business-logo {
+    grid-column: 1;
 }
 
-.experience span {
-    grid-column: 2; 
-    font-size: 1.3em;
+.experience span{
     line-height: 1.2;
     font-size: x-large;
 }
 
-.experience .it-experience .business-logo {
-    grid-column: 1; 
+.experience .it-experience span {
+    grid-column: 2; 
+    width: 25em;
+}
+
+.experience .other-sectors span{
+    width: 30em;
 }
 
 .experience .it-languages{
