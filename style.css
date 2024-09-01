@@ -226,19 +226,6 @@ h2{
     margin: 0;
 }
 
-.experience span {
-    font-size: x-large;
-}
-
-.experience .it-languages{
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-
-.experience figure {
-    margin: 10px;
-}
-
 .experience img{
     width: 50px;
     height: 50px;
@@ -249,7 +236,45 @@ h2{
 }
 
 .experience li{
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 2fr 2fr; 
     width: 70em;
+}
+
+.experience .it-experience {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;  
+}
+
+.experience .business-logo{
+    width: 50px;
+}
+
+.experience span {
+    grid-column: 2; 
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-size: x-large;
+}
+
+.experience .it-experience .business-logo {
+    grid-column: 1; 
+}
+
+.experience .it-languages{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    grid-column: 3; 
+}
+
+.experience .it-languages figure{
+    margin: 10px;
+}
+
+hr{
+    margin-top: 2em;
+    width: 90%;
 }
 
 @media (max-width: 1440px) {
@@ -263,3 +288,4 @@ h2{
         align-items: center;
     }
 }
+
