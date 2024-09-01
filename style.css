@@ -8,44 +8,79 @@
   padding: 0;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+/*FLEX*/
+.flex{
+    display: flex;   
+}
+
+.jac{
     align-items: center;
+    justify-content: center;
+}
+
+.jacs{
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.tc{
+    text-align: center;
+}
+
+.tj{
+    text-align: justify;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/*FONT*/
+.it-font{
+    font-family: "VT323", monospace;
+}
+
+/*COLOR*/
+.w {
+    color: white;
+}
+
+.wb {
+    border: 1px solid white;
+    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
+    2px 2px 0px hsl(0,0%,100%),
+    3px 3px 0px hsl(0,0%,100%),
+    4px 4px 0px hsl(0,0%,100%),
+    5px 5px 0px hsl(0,0%,100%);
+}
+
+/*LAYOUT*/
+body{
     background: linear-gradient(90deg, rgba(0,228,255,1) 26%, rgba(9,104,217,1) 93%);
     padding: 2em;
 }
 
 a{
-    color: white;
     text-decoration: none;
 }
 
-main, .images{
-    display: flex;
-    flex-direction: row;
-}
-
 header{
-    border: 1px solid white;
     border-radius: 7px;
     padding: 2em;
-    color: white; 
-    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
-        2px 2px 0px hsl(0,0%,100%),
-        3px 3px 0px hsl(0,0%,100%),
-        4px 4px 0px hsl(0,0%,100%),
-        5px 5px 0px hsl(0,0%,100%);
     font-size: 2em;
 }
 
 main{
     padding: 5em;
-    flex-direction: column;
     max-width: 100%;
-    color: white;
 }
 
 main section, article{
@@ -58,8 +93,6 @@ section{
 }
 
 .images {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -84,7 +117,6 @@ figure {
     width: 100%;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
-    text-align: center;
     font-size: 1em;
     transform: translateY(100%); 
     transition: transform 0.3s ease-in-out; 
@@ -106,21 +138,7 @@ h2{
     margin-top: 2em;
 }
 
-.about-me, .knowledge article{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
-    2px 2px 0px hsl(0,0%,100%),
-    3px 3px 0px hsl(0,0%,100%),
-    4px 4px 0px hsl(0,0%,100%),
-    5px 5px 0px hsl(0,0%,100%);
-}
-
 .about-me {
-    font-family: "VT323", monospace;
     border-radius: 7px;
     font-size: 2em;
     max-width: 100%;
@@ -128,17 +146,13 @@ h2{
 }
 
 .about-me figure{
-    display: flex;
-    justify-content: center;
-    flex: 1 1 100px;
     margin-right: 1em;
     margin-bottom: 1em;
 }
 
 .about-me .text-about {
-    flex: 1 1 300px;
-    text-align: justify;
     font-size: 0.8em;
+    width: 70%;
 }
 
 .about-me img {
@@ -148,18 +162,11 @@ h2{
 }
 
 .knowledge article {
-    flex-direction: column;
     margin-top: 3em;
 }
 
 .knowledge figure{
     margin: 1em;
-}
-
-
-.knowledge article div{
-    display: flex;
-    flex-direction: row;
 }
 
 .knowledge img{
@@ -170,43 +177,60 @@ h2{
 }
 
 .knowledge .languages{
-    display: flex;
-    flex-direction: column;
     margin: 0 auto; 
-    align-items: center;
-    justify-content: center;
     max-width: 50%;
 }
 
 .knowledge .level-languages{
-    display: flex;
-    justify-content: center;
     gap: 2em;
-    flex-wrap: wrap; 
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
+.knowledge .it h2{
+    padding: 2em;
+}
+
 .knowledge .it {
     background-color: rgba(0, 0, 0);
-    padding: 0;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 2em;
 }
 
-
-.knowledge .it div{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-    font-family: "VT323", monospace;
-    width: 100%;
-}
-
-
-.knowledge .it figure{
+.pink-shadow {
     filter: drop-shadow(0 0 0.30rem lightpink);
 }
 
+.experience h2, .other-sectors{
+    margin-bottom: 2em;
+}
 
-footer{
-    color: white
+.experience{
+    background-color: black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience span {
+    font-size: x-large;
+}
+
+.experience .it-languages{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.experience img{
+    width: 50px;
+    height: 50px;
+}
+
+.experience .it-languages img{
+    margin: 25px;
+}
+
+.experience .it-experience span{
+    width: 45em;
 }

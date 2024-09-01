@@ -7,15 +7,15 @@
     <link rel="icon" type="image/jpg" href="images/icons/portfolio.jpg">
     <title>Portfolio de Marina</title>
 </head>
-<body>
-    <header>
+<body class="flex jac col tc">
+    <header class="w wb">
         Marina Madrid García
     </header>
-    <main>
-        <section class="images">
+    <main class="flex col w">
+        <section class="images flex wrap tc">
             <article>
                 <figure>
-                    <a href="#about-me">
+                    <a class="w" href="#about-me">
                         <img src="images/avatars/sobre-mi.jpg" alt="Sobre mí">
                         <figcaption>Sobre mí</figcaption>
                     </a>
@@ -23,7 +23,7 @@
             </article>
             <article>
                 <figure>
-                    <a href="#knowledge">
+                    <a class="w" href="#knowledge">
                         <img src="images/avatars/conocimientos.jpg" alt="Conocimientos">
                         <figcaption>Conocimientos</figcaption>
                     </a>
@@ -31,7 +31,7 @@
             </article>
             <article>
                 <figure>
-                    <a href="templates/experience/experience.html">
+                    <a class="w" href="#experience">
                         <img src="images/avatars/experiencia.jpg" alt="Experiencia">
                         <figcaption>Experiencia</figcaption>
                     </a> 
@@ -39,7 +39,7 @@
             </article>
             <article>
                 <figure>
-                    <a href="templates/projects/projects.html">
+                    <a class="w" href="templates/projects/projects.html">
                         <img src="images/avatars/proyectos.jpg" alt="Proyectos">
                         <figcaption>Proyectos</figcaption>
                     </a>
@@ -47,7 +47,7 @@
             </article>
             <article>
                 <figure>
-                    <a href="templates/contact/contact.html">
+                    <a class="w" href="templates/contact/contact.html">
                         <img src="images/avatars/contacto.jpg" alt="Contacto">
                         <figcaption>Contacto</figcaption>
                     </a>
@@ -59,9 +59,9 @@
                 </figure>
             </article>
         </section>
-        <section id="about-me" class="about-me">
+        <section id="about-me" class="about-me flex row tj it-font wb">
             <figure>
-                <img src="../../images/avatars/portfolio.jpg" alt="Sobre mí">
+                <img src="images/avatars/portfolio.jpg" alt="Sobre mí">
             </figure>
             <article class="text-about">
                 <p>Soy una desarrolladora Full Stack Junior del CFGS de Desarrollo de Aplicaciones Web. A lo largo de mi formación y experiencia, 
@@ -90,150 +90,250 @@
             </article>
         </section>
         <section id="knowledge" class="knowledge">
-            <article class="languages">
+            <article class="languages flex col jac wrap wb">
                 <h2>Idiomas</h2>
-                <div class="level-languages">
+                <div class="level-languages flex row wrap">
                     <figure>
-                        <img src="../../images/knowledge/languages/spain.png" alt="Español">
+                        <img src="images/knowledge/languages/spain.png" alt="Español">
                         <figcaption>Español - Nativo</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/languages/uk.png" alt="Inglés">
+                        <img src="images/knowledge/languages/uk.png" alt="Inglés">
                         <figcaption>Inglés - B2</figcaption>
                     </figure>    
                     <figure>
-                        <img src="../../images/knowledge/languages/italy.png" alt="Italiano">
+                        <img src="images/knowledge/languages/italy.png" alt="Italiano">
                         <figcaption>Italiano - B1</figcaption>
                     </figure>  
                 </div>
             </article>
             <article class="it">
                 <h2>Programación</h2>
-                <div>
+                <div class="it-languages flex row wrap it-font pink-shadow">
                     <figure>
-                        <img src="../../images/knowledge/it/java.png" alt="Java">
+                        <img src="images/knowledge/it/java.png" alt="Java">
                         <figcaption>Java</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/python.png" alt="Python">
+                        <img src="images/knowledge/it/python.png" alt="Python">
                         <figcaption>Python</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/php.svg" alt="PHP">
+                        <img src="images/knowledge/it/php.png" alt="PHP">
                         <figcaption>Php</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/html.svg" alt="HTML">
+                        <img src="images/knowledge/it/html.svg" alt="HTML">
                         <figcaption>Html</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/css.svg" alt="CSS">
+                        <img src="images/knowledge/it/css.svg" alt="CSS">
                         <figcaption>Css</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/javascript.svg" alt="Javascript">
+                        <img src="images/knowledge/it/javascript.svg" alt="Javascript">
                         <figcaption>Javascript</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/angular.svg" alt="Angular">
+                        <img src="images/knowledge/it/angular.svg" alt="Angular">
                         <figcaption>Angular</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/bootstrap.svg" alt="Bootstrap">
+                        <img src="images/knowledge/it/bootstrap.svg" alt="Bootstrap">
                         <figcaption>Bootstrap</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/jquery.svg" alt="Jquery">
+                        <img src="images/knowledge/it/jquery.svg" alt="Jquery">
                         <figcaption>Jquery</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/typescript.svg" alt="Typescript">
+                        <img src="images/knowledge/it/typescript.svg" alt="Typescript">
                         <figcaption>Typescript</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/spring.png" alt="Spring">
+                        <img src="images/knowledge/it/spring.png" alt="Spring">
                         <figcaption>Spring</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/sql.png" alt="SQL">
+                        <img src="images/knowledge/it/sql.png" alt="SQL">
                         <figcaption>SQL</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/mysql.svg" alt="MySQL">
+                        <img src="images/knowledge/it/mysql.svg" alt="MySQL">
                         <figcaption>MySQL</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/ajax.png" alt="Ajax">
+                        <img src="images/knowledge/it/ajax.png" alt="Ajax">
                         <figcaption>Ajax</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/symfony.png" alt="Symfony">
+                        <img src="images/knowledge/it/symfony.png" alt="Symfony">
                         <figcaption>Symfony</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/Sass.png" alt="Sass">
+                        <img src="images/knowledge/it/Sass.png" alt="Sass">
                         <figcaption>Sass</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/sweetalert2.png" alt="Sweetalert">
+                        <img src="images/knowledge/it/sweetalert2.png" alt="Sweetalert">
                         <figcaption>Sweetalert</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/aws.png" alt="AWS">
+                        <img src="images/knowledge/it/aws.png" alt="AWS">
                         <figcaption>AWS</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/git.png" alt="Git">
+                        <img src="images/knowledge/it/git.png" alt="Git">
                         <figcaption>Git</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/github.png" alt="Github">
+                        <img src="images/knowledge/it/github.png" alt="Github">
                         <figcaption>Github</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/Wordpress.png" alt="Wordpress">
+                        <img src="images/knowledge/it/Wordpress.png" alt="Wordpress">
                         <figcaption>Wordpress</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/woocommerce.png" alt="Woocommerce">
+                        <img src="images/knowledge/it/woocommerce.png" alt="Woocommerce">
                         <figcaption>Woocommerce</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/ionic.svg" alt="Ionic">
+                        <img src="images/knowledge/it/ionic.svg" alt="Ionic">
                         <figcaption>Ionic</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/dia.png" alt="Dia">
+                        <img src="images/knowledge/it/dia.png" alt="Dia">
                         <figcaption>Dia</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/json.png" alt="Json">
+                        <img src="images/knowledge/it/json.png" alt="Json">
                         <figcaption>Json</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/postman.svg" alt="Postman">
+                        <img src="images/knowledge/it/postman.svg" alt="Postman">
                         <figcaption>Postman</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/tailwind.png" alt="Tailwind">
+                        <img src="images/knowledge/it/tailwind.png" alt="Tailwind">
                         <figcaption>Tailwind</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/xml.png" alt="Xml">
+                        <img src="images/knowledge/it/xml.png" alt="Xml">
                         <figcaption>Xml</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/node.png" alt="Node Js">
+                        <img src="images/knowledge/it/node.png" alt="Node Js">
                         <figcaption>Node Js</figcaption>
                     </figure>
                     <figure>
-                        <img src="../../images/knowledge/it/hibernate.svg" alt="Hibernate">
+                        <img src="images/knowledge/it/hibernate.svg" alt="Hibernate">
                         <figcaption>Hibernate</figcaption>
                     </figure>
                 </div>
             </article>
         </section>
+        <section id="experience" class="experience flex col jac wrap wb">
+            <h2>Experiencia en IT</h2>
+            <article class="it-experience col it-font pink-shadow">
+                <ul>
+                    <li class="flex jac">
+                        <figure>
+                            <img src="images/experience/holiday.png" alt="Holiday Golf Group">
+                        </figure>
+                        <span>
+                            Desarrollador Full Stack junior encargada de la creación, desarrollo y mantenimiento del proyecto Myeart.
+                        </span>
+                    </li>
+                    <div class="it-languages flex row jac">
+                        <figure>
+                            <img src="images/knowledge/it/Wordpress.png" alt="Wordpress">
+                            <figcaption>Wordpress</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/woocommerce.png" alt="Woocommerce">
+                            <figcaption>Woocommerce</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/html.svg" alt="Html">
+                            <figcaption>Html</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/css.svg" alt="Css">
+                            <figcaption>Css</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/php.png" alt="Php">
+                            <figcaption>Php</figcaption>
+                        </figure>
+                    </div>
+                    <li class="flex jac">
+                        <figure>
+                            <img src="images/experience/holiday.png" alt="Holiday Golf Group">
+                        </figure>
+                        <span>Desarrollador Full Stack junior encargada del mantenimiento y resolución de incidencias en la app de la red social Golf People para dispositivos móviles.</span>
+                    </li>
+                    <div class="it-languages flex row jac">
+                        <figure>
+                            <img src="images/knowledge/it/ionic.svg" alt="Ionic">
+                            <figcaption>Ionic</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/node.png" alt="Node Js">
+                            <figcaption>Node Js</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/angular.svg" alt="Angular">
+                            <figcaption>Angular</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/php.png" alt="Php">
+                            <figcaption>Php</figcaption>
+                        </figure>
+                    </div>
+                    <li class="flex jac">
+                        <figure>
+                            <img src="images/experience/babel.webp" alt="Babel">
+                        </figure>
+                        <span>Desarrollador Full Stack junior en Babel en el departamento de "Tecnologías consolidadas" encargada del desarrollo y mantenimiento de ERP asegurador Amaine, atendiendo y resolviendo incidencias.</span>
+                    </li>
+                    <div class="it-languages flex row jac">
+                        <figure>
+                            <img src="images/knowledge/it/java.png" alt="Java">
+                            <figcaption>Java</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/spring.png" alt="Spring">
+                            <figcaption>Spring</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/hibernate.svg" alt="Hibernate">
+                            <figcaption>Hibernate</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/mysql.svg" alt="MySQL">
+                            <figcaption>MySQL</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/knowledge/it/angular.svg" alt="Angular">
+                            <figcaption>Angular</figcaption>
+                        </figure>
+                    </div>
+                </ul>
+            </article>
+            <article>
+                <h2>Experiencia en salud</h2>
+                <ul>
+                    <li class="other-sectors flex jac">
+                        <figure class="pink-shadow">
+                            <img src="images/experience/hospital.png" alt="Hospital Regional Universitario de Málaga">
+                        </figure>
+                        <span>Técnico de laboratorio en el Hospital Regional Universitario de Málaga</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </main>   
-    <footer>&copy; 2024 Marina Madrid García</footer>     
+    <footer class="w">&copy; 2024 Marina Madrid García</footer>     
 </body>
 </html>
