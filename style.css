@@ -177,8 +177,9 @@ h2{
 }
 
 .knowledge .languages{
-    margin: 0 auto; 
-    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
 }
 
 .knowledge .level-languages{
