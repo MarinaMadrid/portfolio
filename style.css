@@ -63,6 +63,10 @@
     5px 5px 0px hsl(0,0%,100%);
 }
 
+.pink-shadow {
+    filter: drop-shadow(0 0 0.30rem lightpink);
+}
+
 /*LAYOUT*/
 body{
     background: linear-gradient(90deg, rgba(0,228,255,1) 26%, rgba(9,104,217,1) 93%);
@@ -143,7 +147,6 @@ figure {
     opacity: 0; 
 }
 
-
 .projects .personal-projects figcaption {
     display: inline-block; 
     bottom: 0;
@@ -172,21 +175,23 @@ figure {
 }
 
 h2{
-    margin-top: 5em;
+    margin-top: 4em;
+    margin-bottom: 3em;
     max-width: 10em;
     padding: 2em;
 }
 
 h3{
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
+/*SOBRE MÍ*/
 .about-me {
+    margin-top: 4em;
     border-radius: 7px;
-    font-size: 2em;
     max-width: 100%;
     padding: 1em;
-    min-width: 10em;
+    min-width: 20em;
 }
 
 .about-me figure{
@@ -195,7 +200,7 @@ h3{
 }
 
 .about-me .text-about {
-    font-size: 0.8em;
+    font-size: 2em;
     width: 70%;
 }
 
@@ -207,12 +212,10 @@ h3{
     display: block; 
 }
 
+/*CONOCIMIENTOS*/
 .knowledge{
+    margin-top: 4em;
     background-color: rgba(0, 0, 0);
-}
-
-.knowledge article {
-    margin-top: 3em;
 }
 
 .knowledge figure{
@@ -240,7 +243,7 @@ h3{
 }
 
 .knowledge .it h3{
-    padding: 2em;
+    margin-bottom: 2em;
 }
 
 .knowledge .it {
@@ -250,10 +253,7 @@ h3{
     min-width: 21em;
 }
 
-.pink-shadow {
-    filter: drop-shadow(0 0 0.30rem lightpink);
-}
-
+/*EXPERIENCIA*/
 .experience ul {
     list-style: none;
     padding: 0;
@@ -303,10 +303,6 @@ h3{
     width: 25em;
 }
 
-.experience .other-sectors span{
-    width: 30em;
-}
-
 .experience .it-languages{
     padding-top: 1em;
     padding-bottom: 2em;
@@ -317,10 +313,7 @@ h3{
     margin: 10px;
 }
 
-.projects h2{
-    margin-bottom: 2em;
-}
-
+/*PROYECTOS*/
 .projects .personal-projects img{
     width: 500px;
     height: 300px;
@@ -331,6 +324,7 @@ h3{
     border-radius: 0 0 7px 7px;
 }
 
+/*MEDIA QUERIES*/
 @media (max-width: 1440px) {
     .girl-section{
         display: none;
@@ -341,6 +335,35 @@ h3{
         justify-content: center;
         align-items: center;
     }
+
+    .experience li {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    .experience .it-experience {
+        grid-template-columns: 1fr;
+        min-width: 100%;
+        padding: 2em;
+        min-height: 75em;
+    }
+    
+    .experience .it-experience span,
+    .experience .it-languages {
+        grid-column: auto;
+        width: 100%;
+    }
+    
+    .experience .it-languages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    
+    .experience img {
+        margin-bottom: 1em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -350,5 +373,6 @@ h3{
         align-items: center;
     }
 }
+
 
 
