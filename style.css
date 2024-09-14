@@ -55,6 +55,7 @@
 
 .wb {
     border: 1px solid white;
+    border-radius: 7px;
     box-shadow: 1px 1px 0px hsl(0, 0%, 100%),
     2px 2px 0px hsl(0,0%,100%),
     3px 3px 0px hsl(0,0%,100%),
@@ -104,7 +105,14 @@ figure {
     overflow: hidden;
 }
 
-.images img{
+.projects .personal-projects figure {
+    position: relative; 
+    margin: 0;
+    overflow: hidden;
+    display: inline-block; 
+}
+
+.images img {
     border: 3px outset goldenrod;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     display: block;
@@ -112,21 +120,48 @@ figure {
     height: 20em;
 }
 
-.images figcaption {
+.images-animation{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
     background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
     font-size: 1em;
     transform: translateY(100%); 
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;; 
+    width: 100%;
     opacity: 0; 
 }
 
-.images figure:hover figcaption {
+.projects .personal-projects img {
+    display: block;
+    height: auto;
+}
+
+.images figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; 
+}
+
+
+.projects .personal-projects figcaption {
+    display: inline-block; 
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    text-align: center; 
+}
+
+.projects .personal-projects figure:hover figcaption {
     transform: translateY(0);
+    color: white;
+    opacity: 1;
+}
+
+
+.images figure:hover figcaption, .personal-projects figure:hover figcaption {
+    transform: translateY(0);
+    color: white;
     opacity: 1;
 }
 
@@ -137,6 +172,12 @@ figure {
 }
 
 h2{
+    margin-top: 5em;
+    max-width: 10em;
+    padding: 2em;
+}
+
+h3{
     margin-top: 2em;
 }
 
@@ -145,6 +186,7 @@ h2{
     font-size: 2em;
     max-width: 100%;
     padding: 1em;
+    min-width: 10em;
 }
 
 .about-me figure{
@@ -163,6 +205,10 @@ h2{
     max-width: 100%; 
     height: auto;  
     display: block; 
+}
+
+.knowledge{
+    background-color: rgba(0, 0, 0);
 }
 
 .knowledge article {
@@ -184,7 +230,7 @@ h2{
     margin-left: auto;
     margin-right: auto; 
     width: 30%;
-    min-width: 35em;
+    min-width: 20em;
 }
 
 .knowledge .level-languages{
@@ -193,31 +239,19 @@ h2{
     margin-bottom: 2em;
 }
 
-.knowledge .it h2{
+.knowledge .it h3{
     padding: 2em;
 }
 
 .knowledge .it {
-    background-color: rgba(0, 0, 0);
     padding-right: 2em;
     padding-left: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
+    min-width: 21em;
 }
 
 .pink-shadow {
     filter: drop-shadow(0 0 0.30rem lightpink);
-}
-
-.experience h2, .other-sectors{
-    margin-bottom: 2em;
-}
-
-.experience{
-    background-color: black;
-    width: 50%;
-    min-width: 73em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .experience ul {
@@ -244,7 +278,15 @@ h2{
 
 .experience .it-experience {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 2fr;  
+    grid-template-columns: 0.5fr 2fr 2fr; 
+    background-color: black;
+    width: 85%;
+    min-width: 73em;
+    max-height: 50em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em; 
 }
 
 .experience .it-experience .business-logo {
@@ -275,9 +317,18 @@ h2{
     margin: 10px;
 }
 
-hr{
-    margin-top: 2em;
-    width: 90%;
+.projects h2{
+    margin-bottom: 2em;
+}
+
+.projects .personal-projects img{
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.projects .br{
+    border-radius: 0 0 7px 7px;
 }
 
 @media (max-width: 1440px) {
@@ -285,10 +336,19 @@ hr{
         display: none;
     }
 
-    .about-me{
+    .about-me {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .level-languages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
