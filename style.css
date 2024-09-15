@@ -254,6 +254,10 @@ h3{
 }
 
 /*EXPERIENCIA*/
+.experience{
+    margin-bottom: 3em;  
+}
+
 .experience ul {
     list-style: none;
     padding: 0;
@@ -287,6 +291,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
     padding: 3em; 
+    min-height: 40em;
 }
 
 .experience .it-experience .business-logo {
@@ -315,9 +320,11 @@ h3{
 
 /*PROYECTOS*/
 .projects .personal-projects img{
+    min-width: 350px;
     width: 500px;
-    height: 300px;
     border-radius: 7px;
+    max-height: 45em; 
+    margin-top: 5em;
 }
 
 .projects .br{
@@ -345,7 +352,7 @@ h3{
         grid-template-columns: 1fr;
         min-width: 100%;
         padding: 2em;
-        min-height: 75em;
+        max-height: 250em;
     }
     
     .experience .it-experience span,
@@ -364,6 +371,10 @@ h3{
     .experience img {
         margin-bottom: 1em;
     }
+
+    .projects {
+        margin-top: 3em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -373,6 +384,4 @@ h3{
         align-items: center;
     }
 }
-
-
 
