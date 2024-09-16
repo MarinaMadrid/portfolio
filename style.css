@@ -331,6 +331,16 @@ h3{
     border-radius: 0 0 7px 7px;
 }
 
+/*CONTACTO*/
+.contact-text{
+    padding: 2em;
+}
+
+.contact p{
+    font-size: 2em;
+    line-height: 2em;
+}
+
 /*MEDIA QUERIES*/
 @media (max-width: 1440px) {
     .girl-section{
