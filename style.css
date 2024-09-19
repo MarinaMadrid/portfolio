@@ -69,7 +69,7 @@
 
 /*NAV*/
 nav{
-    background-color: white;
+    background: linear-gradient(90deg, rgba(0, 228, 255, 0.5) 26%, rgba(9, 104, 217, 0.5) 93%);
     width: 100%;
     position: fixed;
     top: 0;
