@@ -7,11 +7,41 @@
     <link rel="icon" type="image/jpg" href="images/icons/portfolio.jpg">
     <title>Portfolio de Marina</title>
 </head>
-<body class="flex jac col tc">
-    <header class="w wb">
+<body class="flex col jac tc">
+    <header id="header" class="w wb">
         Marina Madrid García
     </header>
+    <nav id="nav" class="flex row jac">
+        <figure>
+            <a href="#about-me">
+                <img src="images/icons/portfolio.jpg" alt="Sobre mí">
+            </a>
+        </figure>
+        <figure>
+            <a href="#knowledge">
+                <img src="images/icons/conocimientos.jpg" alt="Conocimientos">
+            </a>
+        </figure>
+        <figure>
+            <a href="#experience">
+                <img src="images/icons/experiencia.jpg" alt="Experiencia">
+            </a>
+        </figure>
+        <figure>
+            <a href="#projects">
+                <img src="images/icons/proyectos.jpg" alt="Proyectos">
+            </a>
+        </figure>
+        <figure>
+            <a href="#contact">
+                <img src="images/icons/contacto.jpg" alt="Contacto">
+            </a>
+        </figure>
+    </nav>
     <main class="flex col w jac">
+        <a href="#header" id="scrollToTop">
+            <img src="images/icons/flecha.png" alt="Subir arriba" />
+        </a>
         <section class="images flex wrap tc">
             <article>
                 <figure>
@@ -367,5 +397,6 @@
         </section>
     </main>   
     <footer class="w">&copy; 2024 Marina Madrid García</footer>     
+    <script src="script.js"></script>
 </body>
 </html>
