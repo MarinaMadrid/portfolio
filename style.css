@@ -337,8 +337,12 @@ h3{
 }
 
 .contact p{
-    font-size: 2em;
-    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.contact p:nth-child(2){
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 /*MEDIA QUERIES*/
@@ -387,6 +391,17 @@ h3{
     }
 }
 
+@media (max-width: 1024px) {
+    .contact p{
+        font-size: 1em;
+    }
+
+    .contact p:nth-child(2){
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+}
+
 @media (max-width: 768px) {
     .level-languages {
         flex-direction: column;
@@ -395,3 +410,9 @@ h3{
     }
 }
 
+@media (max-width: 425px) {
+    .contact p:nth-child(2){
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+}
