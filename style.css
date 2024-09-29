@@ -305,10 +305,25 @@ h3{
     margin-bottom: 3em;  
 }
 
-.experience ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.experience .experience-grid {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 1fr;
+    gap: 40px;
+}
+
+.experience .it-experience {
+    background-color: black;
+    padding: 1em;
+    font-size: x-large;
+}
+
+.experience .experience-item {
+    display: contents; 
+}
+  
+.experience .business-logo {
+    grid-column: 1 / 2; 
+    grid-row: span 2; 
 }
 
 .experience img{
@@ -316,53 +331,22 @@ h3{
     height: 50px;
 }
 
-.experience span{
-    width: 20em;
+.experience span {
+    grid-column: 2 / 3; 
+    align-self: center; 
 }
 
-.experience li{
-    display: grid;
-    align-items: start;
-    grid-template-columns: 0.5fr 2fr 2fr; 
-    width: 70em;
-}
-
-.experience .it-experience {
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 2fr; 
-    background-color: black;
-    width: 85%;
-    min-width: 73em;
-    max-height: 50em;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3em; 
-    min-height: 40em;
-}
-
-.experience .it-experience .business-logo {
-    grid-column: 1;
-}
-
-.experience span{
-    line-height: 1.2;
-    font-size: x-large;
-}
-
-.experience .it-experience span {
-    grid-column: 2; 
-    width: 25em;
-}
-
-.experience .it-languages{
-    padding-top: 1em;
-    padding-bottom: 2em;
-    grid-column: 3; 
+.experience .it-languages {
+    grid-column: 3 / 4; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .experience .it-languages figure{
-    margin: 10px;
+    margin: 5px;
 }
 
 /*PROYECTOS*/
@@ -409,35 +393,6 @@ footer{
         align-items: center;
     }
 
-    .experience li {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    
-    .experience .it-experience {
-        grid-template-columns: 1fr;
-        min-width: 100%;
-        padding: 2em;
-        max-height: 250em;
-    }
-    
-    .experience .it-experience span,
-    .experience .it-languages {
-        grid-column: auto;
-        width: 100%;
-    }
-    
-    .experience .it-languages {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1em;
-    }
-    
-    .experience img {
-        margin-bottom: 1em;
-    }
-
     .projects {
         margin-top: 3em;
     }
@@ -451,6 +406,22 @@ footer{
     .contact p:nth-child(2){
         margin-top: 2.5em;
         margin-bottom: 2.5em;
+    }
+
+    .experience .experience-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .experience .business-logo, span, .experience .it-languages {
+        grid-column: 1 / 2;
+    }
+    
+    .experience .business-logo {
+        grid-row: auto;
+    }
+    
+    .experience .it-languages {
+        justify-content: center;
     }
 }
 
