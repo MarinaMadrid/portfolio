@@ -425,11 +425,51 @@ footer{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 826px) {
     .level-languages {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .experience .experience-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .experience .business-logo img {
+        width: 80px; 
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .experience span {
+        text-align: center; 
+    }
+
+    .experience .it-languages {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .experience .it-languages figure {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .experience img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .experience .it-experience {
+        font-size: 1.1em; 
+        padding: 1em; 
+    }
+    
+    .experience span {
+        font-size: 1em;
     }
 }
 
@@ -438,4 +478,40 @@ footer{
         margin-top: 2.5em;
         margin-bottom: 2.5em;
     }
+
+    .experience .business-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience span {
+        text-align: justify;
+        font-size: 0.9em;
+    }
+
+    .experience .it-languages {
+        justify-content: center;
+        gap: 5px; 
+    }
+
+    .experience .it-languages figure {
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience .it-experience {
+        font-size: 1em;
+        padding: 0.5em; 
+    }
+
+    .experience span {
+        font-size: 0.9em;
+    }
 }
+
+
